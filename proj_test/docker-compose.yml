@@ -1,0 +1,8 @@
+version: '2'
+services:
+    app:
+        build: .
+        image: app:1.0.0
+        volumes:
+        - ./src:/user
+        - "8080:80"
